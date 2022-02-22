@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import './App.css';
 import LandingPage from './components';
@@ -10,7 +10,7 @@ import Login from './components/Login';
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
 
 
       <Switch>
@@ -21,7 +21,7 @@ function App() {
         <Route exact path="/" component={Login} />
       </Switch>
 
-    </>
+    </BrowserRouter>
   );
 }
 

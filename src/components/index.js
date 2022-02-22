@@ -6,8 +6,8 @@ import Header from "./Header";
 import MainContainer from "./MainContainer";
 import ProductDetails from "./Product/productDetails";
 
-const LandingPage = () => {
-    console.log("landing page")
+export const LandingPage = () => {
+    
     return (
         <>
             <Header />
