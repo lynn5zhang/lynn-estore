@@ -22,7 +22,7 @@ const Login = (props) => {
     }
 
     return (
-        <div>
+        <div data-testid='loginform'>
             {isLoggedIn && <Redirect to={"/estore"} />}
            
             <div className="d-flex justify-content-center align-items-center">

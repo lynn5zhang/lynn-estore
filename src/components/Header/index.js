@@ -9,7 +9,7 @@ const Header = () => {
   return (
 
     <>
-      <header className="header">
+      <header  data-testid='head' className="header">
         <div className="container-fluid">
           <div className="row">
             <div className="col-xl-3 col-lg-2">

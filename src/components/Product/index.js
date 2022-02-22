@@ -34,7 +34,7 @@ const Product = () => {
 
 
     return (
-        <div className="row">
+        <div  data-testid='product' className="row">
             {filteredProduct.map((item, index) => (
                 <div className="col-lg-4 col-md-6">
                     <div className="product__item">

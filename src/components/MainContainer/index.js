@@ -11,7 +11,7 @@ class MainContainer extends React.Component {
         console.log("MAIN CONTAINER",this.props);
         return (
 
-            <div className="container-fluid">
+            <div data-testid='maincontainer' className="container-fluid">
                 <div className="row">
                     <div className="col-lg-2 col-md-3 col-sm-4">
                         <Sidebar />

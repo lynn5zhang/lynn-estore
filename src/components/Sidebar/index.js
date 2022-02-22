@@ -54,7 +54,7 @@ const Sidebar = () => {
     }
 
     return (
-        <div>
+        <div data-testid='sidebar'>
             <div className="sidebar_category">
                 <div className="section-title">
                     <h4>Categories</h4>
