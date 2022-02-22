@@ -7,7 +7,7 @@ import { Redirect } from "react-router-dom";
 
 const Login = (props) => {
 
-    const item = props.location.state;
+    // const item = props.location.state;
     const dispatch = useDispatch();
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -52,6 +52,7 @@ const Login = (props) => {
                             onSuccess={onSuccess}
                             className="btn-block"
                             theme="dark"
+                            data-testid="googlelogin"
                         />
                     </div>
                 </div>
