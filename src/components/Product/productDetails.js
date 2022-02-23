@@ -13,7 +13,7 @@ const ProductDetails = (props) => {
 
     const updateCart = (product) => {
 
-        //console.log(product,qty);
+        console.log(product,qty);
         let tmpProduct = { ...product, quantity: parseInt(qty) }
         dispatch(actions.addCartItem(tmpProduct))
 
@@ -21,12 +21,11 @@ const ProductDetails = (props) => {
 
     useEffect(() => {
         console.log(cart);
-
     }, [cart])
 
 
     return (
-        <div className="container">
+        <div data-testid="prdct-dl" className="container">
             <div className="row">
                 <div className="col-lg-6">
                     <img src={item.imageSrc} />
@@ -48,7 +47,7 @@ const ProductDetails = (props) => {
                         <p>
                             Description goes here
                         </p>
-                        <input type="number" min={1} value={qty} onChange={(e) => setQty(e.target.value)} />
+                        <input data-testid="qty-input" type="number" min={1} value={qty} onChange={(e) => setQty(e.target.value)} />
                         <button className="btn btn-danger" onClick={() => updateCart(item)}>{`Add To Cart`}</button>
                     </div>
                 </div>

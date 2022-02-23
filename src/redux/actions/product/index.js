@@ -53,7 +53,7 @@ export const getProductCategories = () => async (dispatch) => {
     let tempCat = [];
     await axios({
         method: "get",
-        url: "http://localhost:5000/product/api/getCategories"
+        url: "http://localhost:3000/product/api/getCategories"
     }).then((res) => {
         console.log("RESPONSE FROM API", res.data);
 
@@ -100,7 +100,7 @@ export const getProducts = () => async (dispatch) => {
                 return {
                     Id: item.id,
                     categoryId: item.categoryid,
-                    imageSrc: `http://localhost:5000/${item.productimg}`,
+                    imageSrc: `http://localhost:3000/${item.productimg}`,
                     name: item.productname,
                     price: item.price
 
