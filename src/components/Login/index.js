@@ -7,7 +7,7 @@ import { Redirect } from "react-router-dom";
 
 const Login = (props) => {
 
-    const item = props.location.state;
+    // const item = props.location.state;
     const dispatch = useDispatch();
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -33,13 +33,15 @@ const Login = (props) => {
                         <div className="form-group">
                             <label>Username</label>
                             <input
-                                type="text"
+                                data-testid="usn-input"
+                                type="email"
                                 className="form-control" />
 
                         </div>
                         <div className="form-group">
                             <label>Password</label>
                             <input
+                                data-testid="pswd-input"
                                 type="password"
                                 className="form-control" />
 
