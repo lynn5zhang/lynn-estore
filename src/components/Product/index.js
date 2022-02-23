@@ -31,8 +31,7 @@ const Product = () => {
         console.log(item);
         dispatch(actions.addCartItem(item));
     }
-
-
+    
     return (
         <div  data-testid='product' className="row">
             {filteredProduct.map((item, index) => (
